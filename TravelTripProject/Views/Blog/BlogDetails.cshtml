@@ -1,0 +1,158 @@
+﻿@model TravelTripProject.Models.Classes.BlogComment
+@{
+    ViewBag.Title = "BlogDetails";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tek Blog Örneği (Kartlar Ayrı)</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-size: 14px; /* Site genelinde küçük yazı */
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        p, label {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Blog resmi 730x350 */
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            max-width: 730px;
+        }
+
+        /* Recent Posts Tarafı */
+        .recent-posts {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+            .recent-posts h3 {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+            }
+
+            .recent-posts ul {
+                padding-left: 0;
+                list-style-type: none;
+            }
+
+                .recent-posts ul li a {
+                    text-decoration: none;
+                    color: #0d6efd;
+                    font-size: 0.9rem;
+                }
+
+                    .recent-posts ul li a:hover {
+                        text-decoration: underline;
+                    }
+
+        /* Yorumların içinde küçük boşluklar */
+        .comment {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- Sol Kısım (Blog ve Yorumlar) -->
+            <div class="col-md-8" style="max-width:730px">
+                @foreach (var item in Model.Value1)
+                {
+                    <div class="card mb-3 p-3 blog-post">
+                        <img src="@item.ImageUrl"
+                             class="card-img-top mb-3">
+
+                        <h1>@item.Title</h1>
+                        <p>
+                            @item.Description
+                        </p>
+
+                    </div>
+                }
+                <!-- Blog İçeriği Kartı -->
+                <!-- Yorumlar Kartı -->
+                
+            <div class="card mb-3 p-3">
+                <h4>Yorumlar</h4>
+                @foreach (var item in Model.Value2)
+                {
+                    <div class="comment">
+                        <p><strong>@item.UserName:</strong> @item.TheComment</p>
+                    </div>
+
+                }
+                </div>
+               
+
+
+                <!-- Yorum Yap Kartı -->
+                <div class="card mb-3 p-3">
+                    <h4>Yorum Yap</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">Ad Soyad</label>
+                            <input type="text" class="form-control" id="fullname" placeholder="Adınız Soyadınız">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-Posta</label>
+                            <input type="email" class="form-control" id="email" placeholder="ornek@mail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefon</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="05xx xxx xx xx">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Yorumunuz</label>
+                            <textarea class="form-control" id="comment" rows="4" placeholder="Yorumunuzu yazın..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Sağ Kısım (Recent Posts) -->
+            <div class="col-md-4">
+                <div class="recent-posts">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        @foreach (var item in Model.Value3)
+                        {
+                            <li><a href="/Blog/BlogDetail/@item.Id">@item.Title</a></li>
+                        }
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,134 @@
+﻿@model TravelTripProject.Models.Classes.BlogComment
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Listesi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-size: 14px; /* Site genelinde küçük yazı */
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* Resimleri sabit oranda tutalım (730x350) */
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            max-width: 730px;
+        }
+
+        .blog-post {
+            
+            height: auto;
+            max-width: 730px;
+        }
+
+        /* Recent Posts Tarafı */
+        .recent-posts {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+            .recent-posts h3 {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+            }
+
+            .recent-posts ul {
+                padding-left: 0;
+                list-style-type: none;
+            }
+
+                .recent-posts ul li a {
+                    text-decoration: none;
+                    color: #0d6efd;
+                    font-size: 0.9rem;
+                }
+
+                    .recent-posts ul li a:hover {
+                        text-decoration: underline;
+                    }
+
+         a {
+            text-decoration: none;
+            color: #992d51;
+        }
+
+        a:hover{
+            text-decoration:underline;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- Sol Kısım (Blog Kartları) -->
+            <div class="col-md-8">
+
+                <!-- Blog Kartı #1 -->
+                @foreach (var item in Model.Value1)
+                {
+                    <div class="card mb-3 p-3 blog-post">
+                        <img src="@item.ImageUrl"
+                             
+                             class="card-img-top mb-3">
+                        <h1 style="color: #992d51 "><a href="/Blog/BlogDetails/@item.Id">@item.Title</a></h1>
+                        <p>
+                            @item.Description.Substring(0, 400)... <a href="/Blog/BlogDetails/@item.Id">Devamını Oku</a>
+                        </p>
+                        <!-- İsteğe bağlı olarak "Devamını Oku" butonu ekleyebilirsiniz -->
+                         
+                    </div>
+                }
+
+
+                <!-- Blog Kartı #2 -->
+
+
+            </div>
+
+            <!-- Sağ Kısım (Recent Posts) -->
+            <div class="col-md-4">
+                <div class="recent-posts">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        @foreach (var item in Model.Value3)
+                        {
+                        <li><a href="/Blog/BlogDetails/@item.Id" style="color: #992d51">@item.Title</a></li>
+                        }
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

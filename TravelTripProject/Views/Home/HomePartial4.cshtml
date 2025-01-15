@@ -1,0 +1,50 @@
+﻿@using TravelTripProject.Models.Classes;  
+@model List<Blog>
+<div class="padding1">
+    <h4>Our Best Places</h4>
+    <div class="box-left">
+        @{var x = 0; }
+
+        @foreach (var item in Model)
+        {
+            <div class="bot-img">
+                <img src="@item.ImageUrl" alt="" />
+            </div>
+            <div class="bot-desc">
+                <p><a href="/Blog/BlogDetails/@item.Id" style="color: #992d51; ">@item.Title </a></p>
+            </div>
+            <div class="clear"></div>
+            x = x + 1;
+            if (x == 3)
+            {
+                break;
+            }
+        }
+    </div>
+
+    <div class="box1-left">
+
+        @foreach (var item in Model.Skip(@x))
+        {
+            <div class="bot-img">
+                <img src="@item.ImageUrl" alt="" />
+            </div>
+            <div class="bot-desc1">
+                <p><a href="/Blog/BlogDetails/@item.Id" style="color: #992d51; ">@item.Title </a></p>
+            </div>
+            <div class="clear"></div>
+
+            x = x + 1;
+                if (x == 6)
+                {
+                    break;
+                }
+        }
+        </div>
+        
+                
+
+
+        
+    
+</div>
