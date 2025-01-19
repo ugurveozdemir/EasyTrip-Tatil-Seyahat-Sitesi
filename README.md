@@ -37,26 +37,28 @@ Bu proje, kişisel gezi ve blog sitesi olarak tasarlanmıştır. 👣 Kişi, bu 
 
 ## 📸 **Bazı Görseller**
 ### **🏠 Home**
-![Home Fotoğrafı](#)
-
+(images/homepage.jpeg)
+(images/about.jpeg)
 ### **✍️ My Blog**
-![My Blog Fotoğrafı](#)
+![My Blog Fotoğrafı](images/blog.jpeg)
+(images/blogd2.jpeg)
+(images/blogd.jpeg)
 
 ### **💬 Comments**
-![Comments Fotoğrafı](#)
+![Comments Fotoğrafı](images/makecomment.jpeg)
 
 ---
 
 ## 👤 **Admin Paneli Görselleri**
 
 ### **🔑 Giriş Ekranı**
-![Admin Giriş Fotoğrafı](#)
+![Admin Giriş Fotoğrafı](images/login.jpeg)
 
 ### **✅ Giriş Yapıldıktan Sonra**
-![Giriş Sonrası Admin Paneli](#)
+![Giriş Sonrası Admin Paneli](images/bloga.jpeg)
 
 ### **🛠️ Admin Panelinden Fotoğraflar**
-![Admin Paneli Fotoğraflar](#)
+![Admin Paneli Fotoğraflar](images/comments.jpeg)
 
 
 
