@@ -65,7 +65,8 @@ Bu proje, kişisel gezi ve blog sitesi olarak tasarlanmıştır. 👣 Kişi, bu 
 
 🎉 Teşekkürler
 
-Bu projeyi hazırlamamda en büyük katkıyı sağlayan sevgili hocam Murat Yücedağ'a sonsuz teşekkürlerimi sunuyorum. 🙏👨‍🏫 
+Bu proje Murat Yücedağ'ın Youtube'de ücretsiz olarak yayımladığı TravelTrip kursudur. 
+Bu projeyi hazırlamamda katkı sağlayan sevgili hocam Murat Yücedağ'a teşekkürlerimi sunuyorum.  
 
 
 
