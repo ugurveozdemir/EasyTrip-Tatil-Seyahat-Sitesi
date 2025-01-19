@@ -64,8 +64,8 @@ Bu proje, kişisel gezi ve blog sitesi olarak tasarlanmıştır. 👣 Kişi, bu 
 
 
 🎉 Teşekkürler
-Bu projeyi hazırlamamda en büyük katkıyı sağlayan sevgili hocam Murat Yücedağ'a sonsuz teşekkürlerimi sunuyorum! 🙏👨‍🏫 
-Onun rehberliği ve anlatımı sayesinde bu projeyi hayata geçirme fırsatı buldum.
-Öğrenme sürecimi şekillendirdiğiniz için minnettarım. 👏
+
+Bu projeyi hazırlamamda en büyük katkıyı sağlayan sevgili hocam Murat Yücedağ'a sonsuz teşekkürlerimi sunuyorum. 🙏👨‍🏫 
+
 
 
