@@ -30,7 +30,7 @@ namespace TravelTripProject.Controllers
 
         public PartialViewResult HomePartial3()
         {
-            var values = c.Blogs.ToList();
+            var values = c.Blogs.Take(10).ToList();
             return PartialView(values); 
 
         }

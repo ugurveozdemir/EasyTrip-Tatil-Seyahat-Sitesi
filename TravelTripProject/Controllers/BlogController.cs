@@ -26,5 +26,20 @@ namespace TravelTripProject.Controllers
             bc.Value3 = c.Blogs.OrderByDescending(x => x.Id).Take(3).ToList();
             return View(bc);
         }
+        [HttpGet]
+        public PartialViewResult MakeComment(int id)
+        {
+            ViewBag.blogid = id;
+
+            return PartialView();
+        }   
+
+        [HttpPost]
+        public PartialViewResult MakeComment(Comment y)
+        {
+            c.Comments.Add(y);
+            c.SaveChanges();
+            return PartialView();
+        }
     }
 }

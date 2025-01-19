@@ -1,0 +1,25 @@
+﻿@model TravelTripProject.Models.Classes.Comment
+<div class="card mb-3 p-3">
+    <h4>Yorum Yap</h4>
+    <form action="/Blog/BlogDetails/@ViewBag.blogid" method="post">
+        
+        <div class="mb-3">
+            <label class="form-label">Blog Id</label>
+            <input class="form-control" type="text" placeholder="ID" name="BlogId" value="@ViewBag.blogid" required readonly>
+        </div>
+        <div class="mb-3">
+            @Html.LabelFor(model => model.UserName, "Name", new { @class = "form-label" })
+            @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", placeholder = "John Doe" })
+        </div>
+        <div class="mb-3">
+            @Html.LabelFor(model => model.Mail, "E-Mail", new { @class = "form-label" })
+            @Html.TextBoxFor(model => model.Mail, new { @class = "form-control", placeholder = "example@mail.com", type = "email" })
+        </div>
+        <div class="mb-3">
+            @Html.LabelFor(model => model.TheComment, "Comment", new { @class = "form-label" })
+            @Html.TextAreaFor(model => model.TheComment, new { @class = "form-control", rows = 4, placeholder = "Please type your comment..." })
+        </div>
+        <button type="submit" class="btn btn-primary">Gönder</button>
+
+    </form>
+</div>

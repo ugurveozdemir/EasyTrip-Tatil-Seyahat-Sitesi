@@ -110,28 +110,7 @@
 
 
                 <!-- Yorum Yap Kartı -->
-                <div class="card mb-3 p-3">
-                    <h4>Yorum Yap</h4>
-                    <form>
-                        <div class="mb-3">
-                            <label for="fullname" class="form-label">Ad Soyad</label>
-                            <input type="text" class="form-control" id="fullname" placeholder="Adınız Soyadınız">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-Posta</label>
-                            <input type="email" class="form-control" id="email" placeholder="ornek@mail.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Telefon</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="05xx xxx xx xx">
-                        </div>
-                        <div class="mb-3">
-                            <label for="comment" class="form-label">Yorumunuz</label>
-                            <textarea class="form-control" id="comment" rows="4" placeholder="Yorumunuzu yazın..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Gönder</button>
-                    </form>
-                </div>
+                @Html.Action("MakeComment","Blog")
             </div>
 
             <!-- Sağ Kısım (Recent Posts) -->
