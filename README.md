@@ -41,8 +41,9 @@ Bu proje, kişisel gezi ve blog sitesi olarak tasarlanmıştır. 👣 Kişi, bu 
 ![About Fotoğrafı](images/about.jpeg)
 ### **✍️ My Blog**
 ![My Blog Fotoğrafı](images/blog.jpeg)
-(images/blogd2.jpeg)
-(images/blogd.jpeg)
+
+![Blog Fotografı](images/blogd2.jpeg)
+![Fotoğraf Blog](images/blogd.jpeg)
 
 ### **💬 Comments**
 ![Comments Fotoğrafı](images/makecomment.jpeg)
