@@ -37,8 +37,8 @@ Bu proje, kişisel gezi ve blog sitesi olarak tasarlanmıştır. 👣 Kişi, bu 
 
 ## 📸 **Bazı Görseller**
 ### **🏠 Home**
-(images/homepage.jpeg)
-(images/about.jpeg)
+![Home Fotoğrafı](images/home.jpeg)
+![About Fotoğrafı](images/about.jpeg)
 ### **✍️ My Blog**
 ![My Blog Fotoğrafı](images/blog.jpeg)
 (images/blogd2.jpeg)
