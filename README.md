@@ -1,7 +1,7 @@
 
 # 🌍 **EasyTrip - Kişisel Gezi ve Blog Sitesi** ✈️📸
 
-Bu proje, kişisel gezi ve blog sitesi olarak tasarlanmıştır. 👣 Kişi, bu site aracılığıyla gezdiği yerlerdeki fotoğrafları paylaşabilir 📷 ve gezi yazılarını yayımlayabilir 📝. Ayrıca admin paneli sayesinde gönderilerini düzenleyebilir 🛠️ ve kaldırabilir ❌.
+Bu proje, kişisel gezi ve blog sitesi olarak tasarlanmıştır. Kişi, bu site aracılığıyla gezdiği yerlerdeki fotoğrafları paylaşabilir 📷 ve gezi yazılarını yayımlayabilir 📝. Ayrıca admin paneli sayesinde gönderilerini düzenleyebilir ve kaldırabilir.
 
 ---
 
